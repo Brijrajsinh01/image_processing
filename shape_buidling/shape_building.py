@@ -25,6 +25,9 @@ cv.polylines(blank_image, [vertices], isClosed=True, color=color, thickness=thic
 amplitude = 100
 frequency = 0.02  # Adjust this value to change the frequency of the sine wave
 phase = 0
+for x in range(width):
+    y = int(amplitude * np.sin(2 * np.pi * frequency * x + phase) + height / 2)
+    cv.circle(blank_image, (x, y), thickness, color, -1)
 
 cv.imshow('Blank Image', blank_image)
 cv.waitKey(0)
