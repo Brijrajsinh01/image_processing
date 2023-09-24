@@ -22,5 +22,9 @@ color = (0, 0, 255)  # BGR color format (red)
 thickness = 2
 cv.polylines(blank_image, [vertices], isClosed=True, color=color, thickness=thickness)
 
+amplitude = 100
+frequency = 0.02  # Adjust this value to change the frequency of the sine wave
+phase = 0
+
 cv.imshow('Blank Image', blank_image)
 cv.waitKey(0)
