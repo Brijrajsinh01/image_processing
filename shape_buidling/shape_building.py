@@ -37,5 +37,4 @@ Image.fromarray(cv.cvtColor(blank_image, cv.COLOR_BGR2RGB)).show()
 plt.imshow(cv.cvtColor(blank_image, cv.COLOR_BGR2RGB))
 plt.axis('off')  # Turn off axis labels and ticks
 plt.show()
-# cv.imshow('Blank Image', blank_image)
-# cv.waitKey(0)
+
