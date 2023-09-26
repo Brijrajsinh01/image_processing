@@ -28,8 +28,6 @@ amplitude = 100
 frequency = 0.02  # Adjust this value to change the frequency of the sine wave
 phase = 0
 for x in range(width):
-    # for i in range(1,10):
-    #     x=(x*i)/10
         y = int(amplitude * np.sin(2 * np.pi * frequency * x + phase) + height / 2)
         cv.circle(blank_image, (x, y), thickness, color, -1)
 
