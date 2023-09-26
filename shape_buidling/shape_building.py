@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 width, height = 800, 600
 blank_image = np.zeros((height, width, 3), np.uint8)
 blank_image.fill(255)  # Fill with white color (255, 255, 255)
-
+# Create a line
 color =( 0,0,255)
 thickness = 2
 start_point=(10,10)
